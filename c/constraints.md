@@ -1,0 +1,28 @@
+PRIMARY KEY
+FOREIGN KEY
+UNIQUE
+INDEX
+UNIQUE INDEX
+AUTO_INCREMENT
+CONSTRAINT 
+NOT NULL
+CHECK
+DEFAULT
+EXCLUSION 
+
+
+
+
+```sql
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(100),
+    LastName VARCHAR(100) NOT NULL,
+    Salary DECIMAL(10, 2) CHECK (Salary > 0),
+    DepartmentID INT,
+    FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID),
+    UNIQUE (Email),
+    DefaultDate DATE DEFAULT CURRENT_DATE
+);
+
+```
