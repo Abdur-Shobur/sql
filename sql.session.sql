@@ -1,2 +1,16 @@
-ALTER TABLE user ADD name varchar(120),
-email varchar(120)
+-- ADD can do 5 thing
+-- 01. ADD Column
+-- 02. ADD Constraint
+-- 03. ADD Index
+-- 04. ADD Foreign Key
+-- 05. ADD Primary Key
+-- ADD
+-- ALTER TABLE test ADD email VARCHAR(255)
+-- ALTER TABLE test ADD new_name char(255) AFTER name
+-- ALTER TABLE test ADD (gender CHAR(1), hire_date DATE)
+-- PRIMARY KEY 
+-- ALTER TABLE test ADD PRIMARY KEY (email)
+-- INDEX
+-- ALTER TABLE test add Index idx_name (name)
+-- UNIQUE
+-- ALTER TABLE test ADD UNIQUE (email)

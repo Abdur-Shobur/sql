@@ -1,0 +1,9 @@
+SELECT
+    name
+FROM
+    students
+UNION
+SELECT
+    course_name
+FROM
+    courses;
